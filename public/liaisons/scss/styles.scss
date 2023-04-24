@@ -83,7 +83,7 @@ footer {
   }
 
   button {
-    margin-top: 25px;
+    margin-top: 15px;
     width: clamp(110px, 5vw, 150px);
     height: 50px;
     border: 1px solid $marron;
@@ -135,7 +135,7 @@ footer {
     }
 
     h3 {
-      font-size: clamp(50px, 7vw, 3.5vw);
+      font-size: clamp(43px, 7vw, 3.5vw);
       letter-spacing: 3px;
       margin: 0;
       text-align: center;
@@ -598,7 +598,7 @@ footer {
 @media (max-width: 800px) {
   .top_section {
     .nav_logo {
-      height: 90px;
+      height: 80px;
       padding-right: clamp(0px, 3vw, 100px);
       padding-left: clamp(0px, 3vw, 100px);
     }
@@ -614,7 +614,7 @@ footer {
 
     .page__contenu h1 {
       margin-top: 5vw;
-      font-size: clamp(80px, 8vw, 120px);
+      font-size: clamp(73px, 8vw, 120px);
       line-height: clamp(70px, 8vw, 120px);
     }
 
