@@ -530,9 +530,6 @@ footer img {
   .page .page__projet .projet__description .titre__logiciel {
     flex-direction: column-reverse;
   }
-  .page .page__projet .carousel img {
-    pointer-events: none;
-  }
   .max_wdth {
     max-width: 100% !important;
   }
