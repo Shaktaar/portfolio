@@ -318,34 +318,44 @@ footer {
 
 
     .carousel {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      justify-content: flex-start !important;
       scroll-behavior: smooth !important;
-      img{
-        cursor: pointer;
-      }
+    }
+
+        
+    .carousel::-webkit-scrollbar {
+      display: none;
     }
 
 
+    .carousel {
+      -ms-overflow-style: none; 
+      scrollbar-width: none;  
+    }
+
     .carousel_container{
       width: 100%;
-      overflow: hidden;
-      scroll-snap-type: x mandatory !important;
-      scroll-behavior: smooth !important;
     }
 
 
     .image__carousel {
-      scroll-behavior: smooth !important;
       margin-right: 2.5em;
       width: 80%;
       height: 80%;
       -o-object-fit: cover;
       object-fit: cover;
-      min-width: 350px;
+      min-width: 350px; 
+      scroll-snap-type: x mandatory !important;
+      scroll-behavior: smooth !important;
+      scroll-snap-align: center !important;
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .images__texte div {
@@ -439,6 +449,12 @@ footer {
   &:hover {
     cursor: grab;
   }
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.active{
   &:active {
     cursor: grabbing;
   }
