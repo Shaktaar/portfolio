@@ -1,0 +1,28 @@
+/**
+* @author Prenom Nom courriel
+* @todo Importer la fonte Futura
+* @todo Personnaliser les variables selon les spécifications du guide visuel
+*       Certaines variables devront être définies par une fonction de coloration
+* @todo Compléter selon l'énoncé de l'exercice
+* @todo Utiliser le sélecteur & pour les sélecteurs des différentes couleurs
+*/
+
+/** Polices de caractères **/
+
+
+@font-face {
+    font-family: 'DahliaB';
+    src: url(../fonts/dahlia-bold.otf) format(opentype);
+  }
+
+  $DahliaB : 'DahliaB', sans-serif;
+
+    
+  $marron: #412017;
+  $blanc: #fff;
+  $noir: #000;
+  $bleuTurquoise: #A0C1C8;
+  $orangeFonce:#D8BA9E;
+  $beige: #E9E1D3;
+  $beigeClair: #eee7da;
+  $rouge: #be2d1f;

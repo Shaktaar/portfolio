@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skullz City - Graphisme</title>
+    <link rel="SHORTCUT ICON" href="../liaisons/favicon.ico" type="image/x-icon">
+    <link rel="ICON" href="../liaisons/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/splitting@1.0.0/dist/splitting.css'>
+    <link rel="stylesheet" href="../liaisons/css/styles.css">
+</head>
+
+<body class="page noisy">
+    <main>
+        <div class="top_section">
+            <button onclick="window.open('../ressources/pdfs/CV_Letellier_Theo.pdf', '_blank');" class="slide-vertical" data-splitting>CV</button>
+            <a href="/index.html"><img class="nav_logo" src="../ressources/images/accueil/logo.svg" alt="Logo"></a>
+            <button class="slide-vertical" data-splitting>Contact</button>
+        </div>
+
+        <div class="page__projet">
+            <div class="padding__titre">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                    onclick="javascript:window.location.href='../graphiste.html'">
+                    <path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z" />
+                </svg>
+                <span class="arborescence"><a href="/index.html">Portfolio</a>
+                    <p>&nbsp/&nbsp</p><a href="../graphiste.html">Graphisme</a>
+                    <p>&nbsp/&nbsp</p>
+                    <p>Skullz City</p>
+                </span>
+                <div class="overflow-hide">
+                    <h1 class="animate_in">Skullz City</h1>
+                </div>
+                <p data-aos="fade-left" data-aos-duration="1500">Transformation d'un croquis 2D en une ville 3D.</p>
+            </div>
+
+            <div class="trait__container">
+                <div class="trait__horizontal" style="margin-top: 25px;"></div>
+            </div>
+
+            <div class="padding__section preview__projet">
+                <div id="city">
+                    <img class="villeimg image_presentation max_wdth"
+                        src="../ressources/images/projets/graphisme/madskullz/Skullz_City_night.jpg" alt="Image de la ville fictive Skullz City">
+
+                    <img class="villeimg image_presentation max_wdth"
+                        src="../ressources/images/projets/graphisme/madskullz/Skullz_City_sunset.jpg">
+
+                    <img class="villeimg image_presentation max_wdth"
+                        src="../ressources/images/projets/graphisme/madskullz/Skullz_City_day.jpg">
+
+                    <img class="villeimg image_presentation max_wdth"
+                        src="../ressources/images/projets/graphisme/madskullz/Skullz_City_sunset.jpg">
+
+                    <img class="villeimg image_presentation max_wdth"
+                        src="../ressources/images/projets/graphisme/madskullz/Skullz_City_night.jpg">
+                </div>
+                <div><input id="slider" type="range" min="0" max="24" value="" oninput="changeopacity(this.value/24)">
+                </div>
+            </div>
+
+            <!-- Trait horizontal -->
+            <div>
+                <div class="trait__horizontal"></div>
+            </div>
+
+            <!-- Titre et logiciels -->
+            <div class="projet__description">
+                <div class="titre__logiciel">
+                    <h1 id="desc">Description du projet</h1>
+                    <div id="space" style="height: 22vw;" class="hide-mobile"></div>
+                    <div>
+                        <h1>Logiciel utilisé</h1>
+                        <p>• Blender</p>
+                    </div>
+                </div>
+
+                <!-- Trait vertical -->
+                <div>
+                    <div class="trait__vertical hide-mobile"></div>
+                </div>
+
+                <!-- Trait horizontal -->
+                <div>
+                    <div class="trait__horizontal hide-desktop trait__horizontal--mobile"></div>
+                </div>
+
+                <!-- Description du projet -->
+                <div class="description__infos">
+                    <p>MadSkullz est un projet NFT créé par l'entreprise MadStudio et a été lancé en février 2022.<br><br>
+                        Sur ce projet j'ai été engagé en temps qu'artiste 3D afin de transformer l'esquisse de « <em>SkullzCity</em>»
+                        initialement en 2D en une ville 3D.<br><br>
+                        
+                        J'ai donc utilisé <strong>Blender</strong> pour modéliser les différentes structures de la ville : les batiments, les routes, 
+                        le pont, le portail, etc.<br><br>
+                        Dans un premier temps, je modélisais chaque structure dans un fichier différent afin de pouvoir travailler les moindres détails sans avoir de soucis de performance. 
+                        Une fois la structure terminée, je l'importais dans un fichier principal où j'assemblais toutes les structures entre elles.
+                    </p>
+                    <p style="padding-top: 2.5em;">Année : 2022</p>
+                </div>
+            </div>
+
+            <!-- Trait horizontal -->
+            <div>
+                <div class="trait__horizontal"></div>
+            </div>
+
+            <!-- Images du projet -->
+            <div class="projet__description images__texte" style="padding-bottom: 0;">
+                <div>
+                    <h1>Images du projet</h1>
+                    <em class="slide">Glissez vers la droite pour naviguer !</em>
+                    <em class="resize">Cliquez pour agrandir les images !</em>
+                </div>
+            </div>
+            <div id="carousel_top" class="padding__section">
+                <div class="carousel" id="carousel">
+                    <img src="../ressources/images/projets/graphisme/madskullz/skullz1.jpg" class="image__carousel" alt="Croquis initial sur lequel j'ai basé mes modélisations 3D">
+                    <img src="../ressources/images/projets/graphisme/madskullz/skullz2.png" class="image__carousel" alt="Point de vue de la ville vu du dessus">
+                    <img src="../ressources/images/projets/graphisme/madskullz/skullz3.png" class="image__carousel" alt="Point de vue de la ville vu de côté">
+                    <video class="image__carousel" loop controls alt="Animation d'un portail dans le style de Rick & Morty">
+                        <source src="../ressources/images/projets/graphisme/madskullz/skullz4.webm"
+                            type="video/webm" />
+                    </video>
+                </div>
+            </div>
+
+            <!-- Trait horizontal -->
+            <div>
+                <div class="trait__horizontal trait__animation"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="/index.html"><img class="nav_logo" src="../ressources/images/accueil/logo.svg" alt="Logo"></a>
+        <p>Théo Letellier - © Tous droits réservés</p>
+    </footer>
+</body>
+
+
+<script src="../liaisons/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src='https://unpkg.com/splitting@1.0.0/dist/splitting.js'></script>
+
+<script>
+    AOS.init();
+    Splitting();
+</script>
+
+<script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script>
+<script src="../liaisons/js/scroll.js"></script>
+<script src="../liaisons/js/trait-animation.js"></script>
+<script src="../liaisons/js/image.js"></script>
+<script src="../liaisons/js/slider_skullz.js"></script>
+
+</html>

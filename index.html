@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Théo Letellier</title>
+    <link rel="SHORTCUT ICON" href="public/liaisons/favicon.ico" type="image/x-icon">
+    <link rel="ICON" href="public/liaisons/favicon.ico" type="image/ico">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/splitting@1.0.0/dist/splitting.css'>
+    <link rel="stylesheet" href="public/liaisons/css/styles.css">
+</head>
+
+<body class="page noisy">
+    <main>
+
+        <div class="top_section">
+            <button onclick="window.open('ressources/pdfs/CV_Letellier_Theo.pdf', '_blank');" class="slide-vertical" data-splitting>CV</button>
+            <a href="index.html"><img class="nav_logo" src="public/ressources/images/accueil/logo.svg" alt="Logo"></a>
+            <button class="slide-vertical" data-splitting>Contact</button>
+
+        </div>
+        <div class="page__contenu" data-aos="fade-up">
+            <h1>Théo Letellier</h1>
+            <div class="sous_contenu">
+                <div>
+                    <div>
+                        <h3>Développeur</h3>
+                        <a href="public/dev.html" class="slide-vertical" data-splitting>Portfolio
+                            développeur</a>
+                    </div>
+                    <div id="creatif1">
+                        <h3>Créatif</h3>
+                        <a href="public/graphiste.html" class="slide-vertical" data-splitting>Portfolio
+                            graphiste</a>
+                    </div>
+                </div>
+                <img src="public/ressources/images/accueil/moi.png" alt="Avatar me représentant" class="accueil__avatar">
+
+                <div id="creatif2">
+                    <div>
+                        <h3>Créatif</h3>
+                        <a href="public/graphiste.html" class="slide-vertical" data-splitting>Portfolio
+                            graphiste</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src='https://unpkg.com/splitting@1.0.0/dist/splitting.js'></script>
+
+<script>
+    AOS.init();
+    Splitting();
+</script>
+</html>
