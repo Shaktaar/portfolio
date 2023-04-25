@@ -311,12 +311,10 @@ footer img {
   width: 100%;
 }
 .page .page__projet .image__carousel {
-  margin-right: 2.5em;
-  width: 80%;
-  height: 80%;
+  margin: 0 1.1em;
   -o-object-fit: cover;
   object-fit: cover;
-  min-width: clamp(300px, 100vw, 325px);
+  min-width: 300px;
   justify-content: flex-start !important;
   scroll-snap-align: center;
   scroll-snap-stop: always;
@@ -529,6 +527,9 @@ footer img {
   }
   .page .page__projet .projet__description .titre__logiciel {
     flex-direction: column-reverse;
+  }
+  .page .page__projet .image__carousel {
+    margin: 0;
   }
   .max_wdth {
     max-width: 100% !important;

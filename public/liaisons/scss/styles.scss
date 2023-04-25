@@ -344,12 +344,10 @@ footer {
 
 
     .image__carousel {
-      margin-right: 2.5em;
-      width: 80%;
-      height: 80%;
+      margin: 0 1.1em;
       -o-object-fit: cover;
       object-fit: cover;
-      min-width: clamp(300px, 100vw, 325px);       
+      min-width: 300px;       
       justify-content: flex-start !important;
 
       scroll-snap-align: center;
@@ -628,12 +626,17 @@ footer {
       .projet__description {
         .titre__logiciel {
           flex-direction: column-reverse;
-        }
+        }      
+      }
+      .image__carousel{
+        margin: 0;
       }
       // .carousel img{
       //   pointer-events: none;
       // }
     }
+
+    
   }
 
   .max_wdth{
