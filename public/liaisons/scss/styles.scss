@@ -322,9 +322,9 @@ footer {
       flex-wrap: nowrap !important;
       overflow-x: scroll;
       overflow-y: hidden;
-      scroll-snap-type: x mandatory;
       justify-content: flex-start !important;
-      scroll-behavior: smooth !important;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
     }
 
         
@@ -349,10 +349,11 @@ footer {
       height: 80%;
       -o-object-fit: cover;
       object-fit: cover;
-      min-width: 350px; 
-      scroll-snap-type: x mandatory !important;
-      scroll-behavior: smooth !important;
-      scroll-snap-align: center !important;
+      min-width: clamp(300px, 100vw, 325px);       
+      justify-content: flex-start !important;
+
+      scroll-snap-align: center;
+      scroll-snap-stop: always;
       &:hover {
         cursor: pointer;
       }
@@ -530,14 +531,15 @@ footer {
   }
 }
 
-.hide-desktop {
-  display: none;
+@media (min-width: 1201px) {
+  .hide-desktop {
+    display: none !important;
+  }
+  
+  .hide-mobile {
+    display: flex;
+  }
 }
-
-.hide-mobile {
-  display: block;
-}
-
 @media (max-width: 1200px) {
   .page {
     #creatif1 {
@@ -582,16 +584,15 @@ footer {
         }
       }
     }
-  }
 
-  .hide-desktop {
-    display: block;
+    .hide-desktop {
+      display: flex;
+    }
+    
+    .hide-mobile {
+      display: none !important;
+    }
   }
-
-  .hide-mobile {
-    display: none;
-  }
-
 }
 
 
